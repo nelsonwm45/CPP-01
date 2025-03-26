@@ -7,13 +7,23 @@
 	also can use constructor to set the name
 	Horde = new Zombie[N] {Zombie(name)}; // Use constructor
 */
+// Zombie *zombieHorde(int N, std::string name)
+// {
+// 	Zombie	*Horde;
+
+// 	Horde = new Zombie[N];
+// 	for (int i = 0; i < N; i++)
+// 		Horde[i].setZombieName(name);
+// 	for (int i = 0; i < N; i++)
+// 		Horde[i].announce();
+// 	return (Horde);
+// }
+
 Zombie *zombieHorde(int N, std::string name)
 {
 	Zombie	*Horde;
 
-	Horde = new Zombie[N];
-	for (int i = 0; i < N; i++)
-		Horde[i].setZombieName(name);
+	Horde = new Zombie[N] { Zombie(name) };
 	for (int i = 0; i < N; i++)
 		Horde[i].announce();
 	return (Horde);
