@@ -14,10 +14,3 @@ Zombie	*newZombie(std::string name)
 	newZombie = new Zombie(name);
 	return (newZombie);
 }
-
-Zombie *newZombie(std::string name)
-{
-	Zombie	newZombie(name);
-
-	return(&newZombie);
-}
