@@ -13,7 +13,7 @@ WHITE='\033[0;97m'
 PINK  = '\033[35m'
 
 # Program Name
-NAME =  Moar_brainz
+NAME =  HI_THIS_IS_BRAIN
 
 # Compiler
 CC = c++
@@ -23,8 +23,6 @@ RM = rm -f
 
 # Source and Object
 SRCS =	main.cpp \
-		Zombie.cpp \
-		zombieHorde.cpp \
 
 		
 OBJ = $(SRCS:.cpp=.o)
