@@ -8,12 +8,14 @@
 
 /*
 	Human A always with weapon, so human A can take weapon as reference // Pass by reference
+	Human A also can do pass by pointer 
 */
 class	HumanA
 {
 	private:
 	std::string	name;
-	Weapon	&weapon;
+	Weapon	&weapon; 
+	// Weapon	*weapon; // Pass by pointer
 	
 	public:
 	// HumanA();
