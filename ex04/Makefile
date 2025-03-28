@@ -23,9 +23,7 @@ RM = rm -f
 
 # Source and Object
 SRCS =	main.cpp \
-		Weapon.cpp \
-		HumanA.cpp \
-		HumanB.cpp \
+		Files.cpp
 
 		
 OBJ = $(SRCS:.cpp=.o)

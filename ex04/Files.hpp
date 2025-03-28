@@ -2,6 +2,7 @@
 # define FILES_HPP
 
 #include <iostream>
+#include <cstdlib> // for std::exit()
 #include <fstream> // for ifstream, ofstream, fstream
 
 # define RED "\033[31m"
@@ -56,13 +57,29 @@
 class	Files
 {
 	private:
-		std::fstream	outfile;
-		std::fstream	infile;
+		std::ifstream	infile;
+		std::ofstream	outfile;
+		std::string		input_filename;
+		std::string		output_filename;
+		std::string		find;
+		std::string		replace;
 
 	public:
+		Files(std::string filename);
+		~Files();
 
+		static	std::string		extract_filename(std::string filename);
+		std::string		find_and_replace(std::string &read_line);
+
+		// Setter
+		void	setFind(std::string	newFind);
+		void	setReplace(std::string	newReplace);
+		void	setOutfile(std::string	p_line);
+
+		// Getter
+		bool	getFileline(std::string &read_line);
 };
 
-
+void	read_file_write_file(char **av);
 
 #endif
