@@ -5,8 +5,15 @@
 
 	new - allocate a HEAP memory for the object/variable and return pointer of it
 	delete - free the allocated memory
+	new class[x] - allocate an array
+	delete [] - free the allocated array
 
 	memory allocated by new MUST be HEAP
+
+	std::getline
+	- read from std::cin (current cursor position) ---> means it will rmb where it stops
+	- read input till it encounters "\n"
+	- discard "\n"
 
 	Another possible
 	std::string	numZombie;

@@ -1,13 +1,19 @@
 #include "Files.hpp"
 
 /*
+example.txt
+The sun sets over the horizon, painting the sky's sun in shades of red and orange. 
+Birds chirp their final melodies before nightfall happening. sun
+sun says the city lights begin to flicker, creating a dance of luminescence across the skyline. 
+Children play in the park, their sun's laughter echoing in the cool evening air. 
+The world's sun slows down as the day transitions into a peaceful night.
+*/
+/*
 	Create a program that takes three parameters in the following order: a filename and
  		two strings, s1 and s2.
 
 	It will open the file <filename> and copies its content into a new file
  		<filename>.replace, replacing every occurrence of s1 with s2.
-
-	! SUBMIT ONLY NEEDED FILES, TEST FILES ARE NOT REQUIRED
 */
 
 void	read_file_write_file(char **av)
